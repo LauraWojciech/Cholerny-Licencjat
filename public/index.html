@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurodivergent Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ADHD Assistant</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Dodaj użytkownika</h2>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Imię" required>
+                <input type="number" id="age" placeholder="Wiek" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Dodaj użytkownika</button>
+            </form>
+        </section>
+        <section>
+            <h2>Użytkownicy</h2>
+            <ul id="userList"></ul>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+    
+    <!-- Formularz do tworzenia widżetów -->
+    <form id="widget-form">
+        <label for="widget-title">Tytuł widżetu:</label>
+        <input type="text" id="widget-title" name="title" required>
+        <label for="widget-content">Treść widżetu:</label>
+        <textarea id="widget-content" name="content" required></textarea>
+        <button type="submit">Dodaj widżet</button>
+    </form>
+    
+    <!-- Kontener widżetów -->
+    <section id="widgets-container">
+        <h2>Twoje widżety:</h2>
+        <div id="widgets-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="/script.js" defer></script>
+    <!-- Dodaj widżety do wody i leków -->
+<button onclick="addWaterWidget()">Dodaj widżet wody</button>
+<button onclick="addMedicationWidget()">Dodaj widżet leków</button>
+
+
+</body>
+</html>
